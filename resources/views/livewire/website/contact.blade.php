@@ -10,10 +10,8 @@
             </div>
         @endif
 
-        <form wire:submit.prevent="save"
-        {{-- wire:recaptcha --}}
-        >
-            {{-- @csrf --}}
+        <form wire:submit.prevent="save" wire:recaptcha>
+            @csrf
             <input id="name" type="text" wire:model="name" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your name") }}" />
             <x-input-error for="name" />
             <input id="email" type="email" wire:model="email" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your email") }}" />
