@@ -5,7 +5,7 @@
     <div class="mt-6">
 
         @if ($showSuccessMessage)
-            <div class="bg-emerald-500/30 px-4 py-3 border border-emerald-400 text-emerald-50">
+            <div class="bg-emerald-100 dark:bg-emerald-500/30 px-4 py-3 border border-emerald-400 text-emerald-700 dark:text-emerald-50">
                 {{ __("Thank you for reaching out. I've received your inquiry and will get back to you as soon as I can.") }}
             </div>
         @endif
