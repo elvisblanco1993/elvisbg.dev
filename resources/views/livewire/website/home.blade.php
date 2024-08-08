@@ -1,6 +1,4 @@
-<x-guest-layout>
-    @include('layouts.navbar')
-
+<div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-700 dark:text-slate-300">
         <section class="py-12">
             <div class="">
@@ -89,4 +87,4 @@
             @livewire('website.contact')
         </div>
     </footer>
-</x-guest-layout>
+</div>
