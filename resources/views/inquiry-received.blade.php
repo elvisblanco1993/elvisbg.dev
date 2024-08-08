@@ -2,11 +2,10 @@
 # NEW LEAD
 
 **Name**: {{ $lead->name }}
+
 **Email**: {{ $lead->email }}
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+**Message**: {{ $lead->question }}
 
 Thanks,<br>
 {{ config('app.name') }}
