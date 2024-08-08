@@ -10,8 +10,7 @@
             </div>
         @endif
 
-        <form wire:submit.prevent="save" wire:recaptcha>
-            @csrf
+        <form wire:recaptcha>
             <input id="name" type="text" wire:model="name" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your name") }}" />
             <x-input-error for="name" />
             <input id="email" type="email" wire:model="email" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your email") }}" />
@@ -23,7 +22,7 @@
                 <p class="text-sm text-red-600 dark:text-red-400">{{ $errors->first('gRecaptchaResponse') }}</p>
             @endif
 
-            <button type="submit" class="mt-6 px-4 py-3 block w-full text-center bg-emerald-600 hover:bg-emerald-600/80 transition-all text-white font-medium uppercase text-sm tracking-wider">
+            <button wire:click="save" class="mt-6 px-4 py-3 block w-full text-center bg-emerald-600 hover:bg-emerald-600/80 transition-all text-white font-medium uppercase text-sm tracking-wider">
                 {{ __("Send inquiry") }}
             </button>
         </form>
