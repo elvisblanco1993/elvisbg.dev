@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.link {
+    @apply dark:text-white hover:text-emerald-500 transition-all font-semibold;
+}
