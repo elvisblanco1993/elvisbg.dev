@@ -82,9 +82,9 @@
     </main>
 
 
-    {{-- <footer class="bg-white dark:bg-slate-700/80 py-24">
+    <footer class="bg-white dark:bg-slate-700/80 py-24">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-300">
             @livewire('website.contact')
         </div>
-    </footer> --}}
+    </footer>
 </div>
