@@ -29,7 +29,7 @@ class Contact extends Component
         return view('livewire.website.contact');
     }
 
-    #[ValidatesRecaptcha]
+    // #[ValidatesRecaptcha]
     public function save()
     {
         $this->validate();
