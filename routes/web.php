@@ -1,7 +1,10 @@
 <?php
 
 use App\Livewire\Website\Home;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+Auth::routes(['register' => false]);
 
 Route::get('/', Home::class)->name('home');
 

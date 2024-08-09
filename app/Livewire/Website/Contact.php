@@ -40,7 +40,7 @@ class Contact extends Component
             'question' => $this->question,
         ]);
 
-        $user = User::where('email', config('mail.from.address'))->first();
+        $user = User::first();
 
         $user->notify(new InquiryReceived($lead));
 
