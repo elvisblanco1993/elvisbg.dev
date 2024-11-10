@@ -36,7 +36,7 @@ class InquiryReceived extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)->markdown('inquiry-received', [
-            'lead' => $this->lead
+            'lead' => $this->lead,
         ]);
     }
 }
