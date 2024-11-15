@@ -42,7 +42,9 @@ class Contact extends Component
 
         $user = User::first();
 
-        $user->notify(new InquiryReceived($lead));
+        defer(function () use ($user, $lead) {
+            $user->notify(new InquiryReceived($lead));
+        });
 
         $this->reset();
 

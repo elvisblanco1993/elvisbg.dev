@@ -19,8 +19,9 @@
             <textarea id="question" wire:model="question" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" cols="30" rows="6" placeholder="How can I help you today?"></textarea>
             <x-input-error for="question" />
 
-            <button type="submit" class="mt-6 px-4 py-3 block w-full text-center bg-emerald-600 hover:bg-emerald-600/80 transition-all text-white font-medium uppercase text-sm tracking-wider">
-                {{ __("Send inquiry") }}
+            <button type="submit" wire:loading.attr="disabled" wire:target="save" class="mt-6 px-4 py-3 block w-full text-center bg-emerald-600 disabled:bg-amber-600 hover:bg-emerald-600/80 disabled:hover:bg-amber-600/80 transition-all text-white font-medium uppercase text-sm tracking-wider">
+                <span wire:loading.remove wire:target="save">{{ __("Send inquiry") }}</span>
+                <span wire:loading wire:target="save">{{ __("Sending") }}</span>
             </button>
         </form>
 
