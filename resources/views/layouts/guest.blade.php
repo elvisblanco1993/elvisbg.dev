@@ -22,12 +22,12 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="bg-gray-100 dark:bg-gray-800">
+    <body class="bg-zinc-100 dark:bg-zinc-800">
         @if (!request()->routeIs('login') && !request()->routeIs('register'))
             @include('layouts.navbar')
         @endif
 
-        <div class="font-sans text-gray-900 dark:text-gray-50 antialiased">
+        <div class="font-sans text-zinc-900 dark:text-zinc-50 antialiased">
             {{ $slot }}
         </div>
 

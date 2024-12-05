@@ -1,5 +1,5 @@
 <div>
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-700 dark:text-slate-300">
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-zinc-700 dark:text-zinc-300">
         <section class="py-12">
             <div class="">
                 <p class="text-xs font-medium uppercase text-emerald-500 dark:text-emerald-400">About Me</p>
@@ -14,13 +14,13 @@
         </section>
 
         <section class="py-12 flex items-center justify-center">
-            <div class="w-1/2 shadow-xl p-4 rounded-lg bg-slate-100 text-slate-700 -rotate-12 hover:rotate-0 transition-all">
+            <div class="w-1/2 shadow-xl p-4 rounded-lg bg-zinc-100 text-zinc-700 -rotate-12 hover:rotate-0 transition-all">
                 <img src="{{ asset('static/profile_beach.jpeg') }}" alt=""
                     class="w-full rounded-md"
                 >
                 <p class="mt-2 text-center font-mono">This is me</p>
             </div>
-            <div class="w-1/2 -ml-8 shadow-xl p-4 rounded-lg bg-slate-100 text-slate-700 rotate-6 hover:rotate-0 transition-all">
+            <div class="w-1/2 -ml-8 shadow-xl p-4 rounded-lg bg-zinc-100 text-zinc-700 rotate-6 hover:rotate-0 transition-all">
                 <img src="{{ asset('static/me-and-the-boss.webp') }}" alt=""
                     class="w-full aspect-square object-cover rounded-md"
                 >
@@ -32,58 +32,69 @@
             <p class="text-xs font-medium uppercase text-emerald-500 dark:text-emerald-400">Projects</p>
 
             <div class="mt-6">
+                <a href="#" class="dark:text-white hover:text-emerald-500 transition-all font-semibold">Tinycat</a>
+                <p>
+                    A secure, easy-to-use client portal designed for small and medium-sized accounting firms. (Currently in private beta)
+                </p>
+            </div>
+            <div class="mt-6">
                 <a href="https://linkd.page?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="linkd">Linkd</a>
                 <p>
-                    A privacy-focused, link in bio platform. Free for individuals, and affordable to all business sizes.
+                    A privacy-first link-in-bio platform that’s free for individuals and budget-friendly for businesses of all sizes.
                 </p>
             </div>
             <div class="mt-6">
                 <a href="https://voicebits.co?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="voicebits">Voicebits</a>
                 <p>
-                    Yet another podcast hosting provider.
+                    Your new go-to podcast hosting provider – offering reliable services for creators at every level.
                 </p>
             </div>
         </section>
 
         <section class="py-12">
             <p class="text-xs font-medium uppercase text-emerald-500 dark:text-emerald-400">Client work</p>
-
+            <div class="mt-6">
+                <a href="https://steelcommandercorp.com?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="urbe">steelcommandercorp.com</a>
+                <p>
+                    Collaborated closely with Steel Commander's IT Director to develop an advanced internal Sales and Project Management CRM, streamlining operations and improving team efficiency. Also played a key role in enhancing their employee learning platform and crafting a fresh, user-friendly landing page infrastructure.
+                </p>
+            </div>
             <div class="mt-6">
                 <a href="https://urbeuniversity.edu?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="urbe">urbeuniversity.edu</a>
                 <p>
-                    The main website for URBE University. I also built their custom landing pages platform, and Admissions portal.
+                    Designed and developed the core website for URBE University, elevating its digital presence. Additionally, I created a custom landing page platform and an Admissions portal to simplify the enrollment process and engage prospective students seamlessly.
                 </p>
             </div>
             <div class="mt-6">
                 <a href="https://sosmetaxservices.com?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="sosme">sosmetaxservices.com</a>
                 <p>
-                    The main website for SOSME Accounting & Taxes Services, LLC - an accounting and taxes office in Pembroke Pines, Fl.
+                    Built the main website for SOSME Accounting & Taxes Services, LLC, a trusted accounting and tax office based in Pembroke Pines, FL. The website highlights their services while providing a professional, easy-to-navigate platform for clients seeking expert financial guidance.
                 </p>
             </div>
             <div class="mt-6">
                 <a href="https://merceylaw.com?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="merceylaw">merceylaw.com</a>
                 <p>
-                    The main website for MVL Law Firm, LLC - an inmigration law firm operating in South Florida.
+                    Developed the main website for MVL Law Firm, LLC, a premier immigration law firm in South Florida. The site offers an informative, approachable experience for clients navigating the complex world of immigration law.
                 </p>
             </div>
             <div class="mt-6">
                 <a href="https://www.tpbsgroup.com?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="tpbs">tpbsgroup.com</a>
                 <p>
-                    The main website for TPBS Corp, an accounting and taxes office in Miami, Fl.
+                    Created the main website for TPBS Corp, a prominent accounting and tax services firm in Miami, FL. The website showcases their services while offering an intuitive interface to connect with clients seeking reliable financial advice.
                 </p>
             </div>
             <div class="mt-6">
                 <a href="https://mjacctax.com?utm_source=elvisbgdotdev" class="dark:text-white hover:text-emerald-500 transition-all font-semibold" target="mjacctax">mjacctax.com</a>
                 <p>
-                    {{__("The main website for MJ Accounting and Taxes Services, LLC - an accounting and taxes office in Miami, Fl.")}}
+                    Designed and launched the main website for MJ Accounting and Tax Services, LLC, a leading accounting firm in Miami, FL. The site delivers clear, concise information about their tax and accounting services, helping local clients manage their finances with ease.
                 </p>
             </div>
         </section>
     </main>
 
 
-    <footer class="bg-white dark:bg-slate-700/80 py-24">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-300">
+    <footer class="bg-white dark:bg-zinc-700/80 py-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-zinc-300">
             @livewire('website.contact')
         </div>
     </footer>
