@@ -12,11 +12,11 @@
 
         <form wire:submit="save" wire:recaptcha>
             @csrf
-            <input id="name" type="text" wire:model="name" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your name") }}" />
+            <input id="name" type="text" wire:model="name" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-hidden px-4 py-3" placeholder="{{ __("Your name") }}" />
             <x-input-error for="name" />
-            <input id="email" type="email" wire:model="email" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" placeholder="{{ __("Your email") }}" />
+            <input id="email" type="email" wire:model="email" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-hidden px-4 py-3" placeholder="{{ __("Your email") }}" />
             <x-input-error for="email" />
-            <textarea id="question" wire:model="question" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-none px-4 py-3" cols="30" rows="6" placeholder="How can I help you today?"></textarea>
+            <textarea id="question" wire:model="question" class="block w-full mt-6 border border-slate-300 dark:border-slate-500 bg-white dark:bg-slate-700 placeholder:text-slate-700 dark:placeholder:text-slate-400 text-slate-700 dark:text-slate-100 focus:border-emerald-400 focus:ring-0 outline-hidden px-4 py-3" cols="30" rows="6" placeholder="How can I help you today?"></textarea>
             <x-input-error for="question" />
 
             <button type="submit" wire:loading.attr="disabled" wire:target="save" class="mt-6 px-4 py-3 block w-full text-center bg-emerald-600 disabled:bg-amber-600 hover:bg-emerald-600/80 disabled:hover:bg-amber-600/80 transition-all text-white font-medium uppercase text-sm tracking-wider">
