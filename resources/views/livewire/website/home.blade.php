@@ -93,9 +93,16 @@
     </main>
 
 
-    <footer class="bg-white dark:bg-zinc-700/80 py-24">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-zinc-300">
-            @livewire('website.contact')
+    <footer>
+        <div class="bg-white dark:bg-zinc-700/80 py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-zinc-300">
+                @livewire('website.contact')
+            </div>
+        </div>
+        <div class="bg-zinc-900/80 py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-zinc-300">
+                @livewire('website.subscribe')
+            </div>
         </div>
     </footer>
 </div>
